@@ -30,7 +30,7 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Add the executable
-add_executable(DMDControl main.cpp image_to_bin.cpp initializeDMD.cpp)
+add_executable(DMDControl main.cpp image_to_bin.cpp initializeDMD.cpp loadPattern.cpp)
 
 # Link against OpenCV libraries
 target_link_libraries(DMDControl ${OpenCV_LIBS})

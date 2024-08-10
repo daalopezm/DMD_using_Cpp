@@ -15,7 +15,8 @@ according to any additional change in the files or extra required library.
 cmake -DCMAKE_TOOLCHAIN_FILE="../Win32Toolchain.cmake" ..
 cmake --build . --config Debug -- /p:Platform=Win32
 
-The main.cpp run all the necesary functions and also load the library. 
+The main.cpp run all the necesary functions and also loads the library. The executable can be found in ./build/Debug.
+To build the code, run the powersell script "build_project.ps1". 
 
 # References
 - [DLP® Discovery™ 4100 Development Kit Technical Reference Manual User's Guide](https://www.ti.com/lit/ug/dlpu053/dlpu053.pdf)

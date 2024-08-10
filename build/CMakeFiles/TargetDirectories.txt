@@ -1,0 +1,3 @@
+C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/DMDControl.dir
+C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/ZERO_CHECK.dir

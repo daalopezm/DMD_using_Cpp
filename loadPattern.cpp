@@ -5,13 +5,7 @@
 #include "headers.h"
 
 // Function to load the pattern onto the DMD
-void loadPattern(const std::vector<uint8_t>& rowData, unsigned int length, int16_t& DMDType, int16_t& deviceNumber) {
-    // Load the DLL
-    HMODULE dllHandle = LoadLibrary(TEXT("D4100_usb.dll"));
-    if (!dllHandle) {
-        std::cerr << "Failed to load the DLL." << std::endl;
-        return;
-    }
+void loadPattern(HMODULE& dllHandle, const std::vector<uint8_t>& rowData, unsigned int length, int16_t& DMDType, int16_t& deviceNumber) {
 
     // Function pointer declarations for the DLL functions
     typedef int16_t(*SetBlkMdFunc)(int16_t, int16_t);
@@ -81,7 +75,7 @@ void loadPattern(const std::vector<uint8_t>& rowData, unsigned int length, int16
     LoadControl(deviceNumber);
 
     // Free the DLL after usage
-    FreeLibrary(dllHandle);
+    //FreeLibrary(dllHandle);
 }
 
 

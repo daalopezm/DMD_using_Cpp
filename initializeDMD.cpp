@@ -4,14 +4,8 @@
 #include "headers.h"
 
 // Function to initialize the DMD
-void initializeDMD(unsigned int& length, int16_t& deviceNumber, int16_t& DMDType) {
-    // Load the DLL
-    HMODULE dllHandle = LoadLibrary(TEXT("D4100_usb.dll"));
-    if (!dllHandle) {
-        std::cerr << "Failed to load the DLL." << std::endl;
-        return;
-    }
-
+void initializeDMD(HMODULE& dllHandle, unsigned int& length, int16_t& deviceNumber, int16_t& DMDType) {
+    
     // Function pointer declarations for the DLL functions
     typedef int16_t(*GetNumDevFunc)();
     typedef int16_t(*GetDMDTYPEFunc)(int16_t);

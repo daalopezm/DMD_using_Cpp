@@ -63,9 +63,11 @@ int main() {
                 escape = escape_;
                 if (var) {
                     loadPattern(dllHandle, rowData0, length, DMDType, deviceNumber);
+                    std::cout << "Running test pattern 0 ..." << std::endl;
                     var = false;
                 } else {
                     loadPattern(dllHandle, rowData1, length, DMDType, deviceNumber);
+                    std::cout << "Running test pattern 1 ..." << std::endl;
                     var = true;
                 }
             }

@@ -55,12 +55,11 @@ int main() {
             break;  // Exit the loop and close the program
         } else if (key == 't' || key == 'T') {
             // Run a test pattern
-            std::cout << "Running test pattern (press q to quit) ..." << std::endl;
+            std::cout << "Running test pattern (press 'ctrl+c' to quit) ..." << std::endl;
             // Infinite loop to alternate between rowData0 and rowData1
-            char escape = 'p';
-            while (escape != 'q' || escape != 'Q') {
-                char escape_ = std::cin.get();
-                escape = escape_;
+            while (true) {
+                //char escape_ = std::cin.get();
+                //escape = escape_;
                 if (var) {
                     loadPattern(dllHandle, rowData0, length, DMDType, deviceNumber);
                     std::cout << "Running test pattern 0 ..." << std::endl;
@@ -71,7 +70,8 @@ int main() {
                     var = true;
                 }
             }
-            break;
+            //break;
+            //std::cout << "Running test pattern (press q to quit) ..." << std::endl;
         } else if (key == 'l' || key == 'L') {
             // Load and process the image
             std::string imagePath;

@@ -3,17 +3,17 @@ CPP code to run a DMD DLP650LNIR with Discover 4100 controller. You can upload i
 Opencv x32 bit is required. Usually, the source code is provided and you need to build
 it. To do that, download opencv 4.10.0, cmake 3.30.2 x64 bit and run the following in powershell of whatever terminal you use:
 
-cd C:\opencv\build
+'cd C:\opencv\build
 mkdir x32
 cd x32
 cmake -G "Visual Studio 17 2022" -A Win32 -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=C:\opencv\build\x32\install C:\opencv\sources
 cmake --build . --config Debug -- /p:Platform=Win32
-cmake --install . --config Debug (optional)
+cmake --install . --config Debug (optional)'
 
 Once build the requirements, proceed to build the project. Be aware of modify the CmakeLists.txt
 according to any additional change in the files or extra required library. 
-cmake -DCMAKE_TOOLCHAIN_FILE="../Win32Toolchain.cmake" ..
-cmake --build . --config Debug -- /p:Platform=Win32
+'cmake -DCMAKE_TOOLCHAIN_FILE="../Win32Toolchain.cmake" ..
+cmake --build . --config Debug -- /p:Platform=Win32'
 
 The main.cpp run all the necesary functions and also loads the library. The executable can be found in ./build/Debug.
 To build the code, run the powersell script "build_project.ps1". 

@@ -18,9 +18,24 @@ cmake --build . --config Debug -- /p:Platform=Win32
 #include "headers.h"
 #include <cstdint>
 
+
+HMODULE dllHandle = LoadLibrary(TEXT("D4100_usb.dll"));
+
+// Get function pointers to the functions from the DLL
+GetNumDevFunc GetNumDev = (GetNumDevFunc)GetProcAddress(dllHandle, "GetNumDev");
+GetDMDTYPEFunc GetDMDTYPE = (GetDMDTYPEFunc)GetProcAddress(dllHandle, "GetDMDTYPE");
+SetWDTFunc SetWDT = (SetWDTFunc)GetProcAddress(dllHandle, "SetWDT");
+SetTPGEnableFunc SetTPGEnable = (SetTPGEnableFunc)GetProcAddress(dllHandle, "SetTPGEnable");
+SetBlkMdFunc SetBlkMd = (SetBlkMdFunc)GetProcAddress(dllHandle, "SetBlkMd");
+LoadControlFunc LoadControl = (LoadControlFunc)GetProcAddress(dllHandle, "LoadControl");
+ClearFifosFunc ClearFifos = (ClearFifosFunc)GetProcAddress(dllHandle, "ClearFifos");
+SetRowMdFunc SetRowMd = (SetRowMdFunc)GetProcAddress(dllHandle, "SetRowMd");
+SetNSFLIPFunc SetNSFLIP = (SetNSFLIPFunc)GetProcAddress(dllHandle, "SetNSFLIP");
+LoadDataFunc LoadData = (LoadDataFunc)GetProcAddress(dllHandle, "LoadData");
+SetBlkAdFunc SetBlkAd = (SetBlkAdFunc)GetProcAddress(dllHandle, "SetBlkAd");
+SetRowAddrFunc SetRowAddr = (SetRowAddrFunc)GetProcAddress(dllHandle, "SetRowAddr");
+
 int main() {
-    // Load the DLL
-    HMODULE dllHandle = LoadLibrary(TEXT("D4100_usb.dll"));
 
     if (!dllHandle) {
         std::cerr << "Failed to load the DLL." << std::endl;
@@ -37,7 +52,7 @@ int main() {
     unsigned int length;
     int16_t deviceNumber;
     int16_t DMDType;
-    initializeDMD(dllHandle, length, deviceNumber, DMDType);
+    initializeDMD(length, deviceNumber, DMDType);
 
     std::cout << "Device Number: " << deviceNumber << std::endl;
     std::cout << "DMD Type: " << DMDType << std::endl;
@@ -55,17 +70,18 @@ int main() {
             break;  // Exit the loop and close the program
         } else if (key == 't' || key == 'T') {
             // Run a test pattern
+            
             std::cout << "Running test pattern (press 'ctrl+c' to quit) ..." << std::endl;
             // Infinite loop to alternate between rowData0 and rowData1
             while (true) {
                 //char escape_ = std::cin.get();
                 //escape = escape_;
                 if (var) {
-                    loadPattern(dllHandle, rowData0, length, DMDType, deviceNumber);
+                    loadPattern(rowData0, length, DMDType, deviceNumber);
                     //std::cout << "Running test pattern 0 ..." << std::endl;
                     var = false;
                 } else {
-                    loadPattern(dllHandle, rowData1, length, DMDType, deviceNumber);
+                    loadPattern(rowData1, length, DMDType, deviceNumber);
                     //std::cout << "Running test pattern 1 ..." << std::endl;
                     var = true;
                 }
@@ -84,7 +100,7 @@ int main() {
             std::cout << "Initialization and image processing complete." << std::endl;
 
             // Load the pattern onto the DMD
-            loadPattern(dllHandle, binaryImgArray, length, DMDType, deviceNumber);
+            loadPattern(binaryImgArray, length, DMDType, deviceNumber);
         } else {
             std::cout << "Invalid input. Please press 't', 'l', or 'q'." << std::endl;
         }

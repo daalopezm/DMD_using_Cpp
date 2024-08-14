@@ -4,19 +4,9 @@
 #include "headers.h"
 
 // Function to initialize the DMD
-void initializeDMD(HMODULE& dllHandle, unsigned int& length, int16_t& deviceNumber, int16_t& DMDType) {
+void initializeDMD(unsigned int& length, int16_t& deviceNumber, int16_t& DMDType) {
     
-    // Function pointer declarations for the DLL functions
-    typedef int16_t(*GetNumDevFunc)();
-    typedef int16_t(*GetDMDTYPEFunc)(int16_t);
-    typedef int16_t(*SetWDTFunc)(int16_t, int16_t);
-    typedef int16_t(*SetTPGEnableFunc)(int16_t, int16_t);
 
-    // Get function pointers to the functions from the DLL
-    GetNumDevFunc GetNumDev = (GetNumDevFunc)GetProcAddress(dllHandle, "GetNumDev");
-    GetDMDTYPEFunc GetDMDTYPE = (GetDMDTYPEFunc)GetProcAddress(dllHandle, "GetDMDTYPE");
-    SetWDTFunc SetWDT = (SetWDTFunc)GetProcAddress(dllHandle, "SetWDT");
-    SetTPGEnableFunc SetTPGEnable = (SetTPGEnableFunc)GetProcAddress(dllHandle, "SetTPGEnable");
 
     // Check if the function pointers are valid
     if (!GetNumDev || !GetDMDTYPE || !SetWDT || !SetTPGEnable) {

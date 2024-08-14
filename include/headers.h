@@ -35,6 +35,7 @@ extern LoadDataFunc LoadData;
 extern SetBlkAdFunc SetBlkAd;
 extern SetRowAddrFunc SetRowAddr;
 
+
 // Function declarations
 std::vector<uint8_t> image_to_bin(const std::string& imagePath);
 void initializeDMD(unsigned int& length, int16_t& deviceNumber, int16_t& DMDType);

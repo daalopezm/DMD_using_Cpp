@@ -38,7 +38,7 @@ void initializeDMD(unsigned int& length, int16_t& deviceNumber, int16_t& DMDType
     // Disable watchdog timer and internal pattern generation
     SetWDT(0, deviceNumber);
     SetTPGEnable(0, deviceNumber);
-
+    ClearFifos(deviceNumber);
     // Free the DLL after usage
     // FreeLibrary(dllHandle);
 }

@@ -74,8 +74,6 @@ int main() {
             std::cout << "Running test pattern (press 'ctrl+c' to quit) ..." << std::endl;
             // Infinite loop to alternate between rowData0 and rowData1
             while (true) {
-                //char escape_ = std::cin.get();
-                //escape = escape_;
                 if (var) {
                     loadPattern(rowData0, length, DMDType, deviceNumber);
                     //std::cout << "Running test pattern 0 ..." << std::endl;
@@ -86,8 +84,6 @@ int main() {
                     var = true;
                 }
             }
-            //break;
-            //std::cout << "Running test pattern (press q to quit) ..." << std::endl;
         } else if (key == 'l' || key == 'L') {
             // Load and process the image
             std::string imagePath;

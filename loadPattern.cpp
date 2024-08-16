@@ -14,13 +14,15 @@ void loadPattern(std::vector<uint8_t>& chunk1, std::vector<uint8_t>& chunk2, boo
     SetRowMd(2, deviceNumber); // DMD Row Address 0
     SetRowAddr(0, deviceNumber);
     LoadControl(deviceNumber);    
-    loaded_chunk1 = LoadData(chunk1.data(), length, DMDType, deviceNumber);
+    loaded_chunk1 = 1;
+    LoadData(chunk1.data(), length, DMDType, deviceNumber);
 
     // Load second half of the screen
     SetRowMd(2, deviceNumber); // DMD Row Address 400
     SetRowAddr(400, deviceNumber);
     LoadControl(deviceNumber);
-    loaded_chunk2 = LoadData(chunk2.data(), length, DMDType, deviceNumber);
+    loaded_chunk2 = 1;
+    LoadData(chunk2.data(), length, DMDType, deviceNumber);
 }
 
 

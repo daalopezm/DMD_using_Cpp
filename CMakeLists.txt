@@ -9,7 +9,7 @@ if(NOT CMAKE_SIZEOF_VOID_P EQUAL 4)
 endif()
 
 # Set the C++ standard
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 
@@ -30,7 +30,7 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Add the executable
-add_executable(DMDControl main.cpp image_to_bin.cpp initializeDMD.cpp loadPattern.cpp)
+add_executable(DMDControl main.cpp image_to_bin.cpp initializeDMD.cpp splitPattern.cpp loadPattern.cpp)
 
 # Link against OpenCV libraries
 target_link_libraries(DMDControl ${OpenCV_LIBS})

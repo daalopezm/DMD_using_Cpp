@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <windows.h>
+#include <utility>
 #include <opencv2/opencv.hpp>
 
 // Function pointer declarations for the DLL functions
@@ -39,7 +40,7 @@ extern SetRowAddrFunc SetRowAddr;
 // Function declarations
 std::vector<uint8_t> image_to_bin(const std::string& imagePath);
 void initializeDMD(unsigned int& length, int16_t& deviceNumber, int16_t& DMDType);
-void loadPattern(const std::vector<uint8_t>& rowData, unsigned int length, int16_t& DMDType, int16_t& deviceNumber);
-
+std::pair<std::vector<uint8_t>, std::vector<uint8_t>> splitPattern(const std::vector<uint8_t>& rowData, unsigned int length);
+void loadPattern(std::vector<uint8_t>& chunk1, std::vector<uint8_t>& chunk2, bool& loaded_chunk1, bool& loaded_chunk2, int16_t& DMDType, int16_t& deviceNumber, unsigned int length);
 
 #endif // HEADERS

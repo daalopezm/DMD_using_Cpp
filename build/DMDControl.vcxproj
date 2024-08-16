@@ -94,6 +94,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -141,6 +142,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -190,6 +192,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -240,6 +243,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -339,6 +343,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\dalop\OneDrive - stevens.edu\Stevens - PhD Physics\Research\Colaborations\DMD\DMD cpp code\main.cpp" />
     <ClCompile Include="C:\Users\dalop\OneDrive - stevens.edu\Stevens - PhD Physics\Research\Colaborations\DMD\DMD cpp code\image_to_bin.cpp" />
     <ClCompile Include="C:\Users\dalop\OneDrive - stevens.edu\Stevens - PhD Physics\Research\Colaborations\DMD\DMD cpp code\initializeDMD.cpp" />
+    <ClCompile Include="C:\Users\dalop\OneDrive - stevens.edu\Stevens - PhD Physics\Research\Colaborations\DMD\DMD cpp code\splitPattern.cpp" />
     <ClCompile Include="C:\Users\dalop\OneDrive - stevens.edu\Stevens - PhD Physics\Research\Colaborations\DMD\DMD cpp code\loadPattern.cpp" />
   </ItemGroup>
   <ItemGroup>

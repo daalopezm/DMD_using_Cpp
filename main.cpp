@@ -59,6 +59,8 @@ int main() {
     std::cout << "Chunk Size (length): " << length << std::endl;
 
     bool var = true;
+    bool loaded_chunk1 = false;
+    bool loaded_chunk2 = false;
 
     // Main loop to handle user input
     while (true) {
@@ -73,15 +75,20 @@ int main() {
             
             std::cout << "Running test pattern (press 'ctrl+c' to quit) ..." << std::endl;
             // Infinite loop to alternate between rowData0 and rowData1
+            auto [chunk01, chunk02] = splitPattern(rowData0, length);
+            auto [chunk11, chunk12] = splitPattern(rowData1, length);
             while (true) {
                 if (var) {
-                    loadPattern(rowData0, length, DMDType, deviceNumber);
-                    //std::cout << "Running test pattern 0 ..." << std::endl;
-                    var = false;
+                    loadPattern(chunk01, chunk02, loaded_chunk1, loaded_chunk2, DMDType, deviceNumber, length);
+                    if (loaded_chunk1 & loaded_chunk2){
+                        var = false;
+                    }
+                    
                 } else {
-                    loadPattern(rowData1, length, DMDType, deviceNumber);
-                    //std::cout << "Running test pattern 1 ..." << std::endl;
-                    var = true;
+                    loadPattern(chunk11, chunk12, loaded_chunk1, loaded_chunk2, DMDType, deviceNumber, length);
+                    if (loaded_chunk1 & loaded_chunk2){
+                        var = true;
+                    }
                 }
             }
         } else if (key == 'l' || key == 'L') {
@@ -96,7 +103,8 @@ int main() {
             std::cout << "Initialization and image processing complete." << std::endl;
 
             // Load the pattern onto the DMD
-            loadPattern(binaryImgArray, length, DMDType, deviceNumber);
+            auto [chunk01, chunk02] = splitPattern(binaryImgArray, length);
+            loadPattern(chunk01, chunk02, loaded_chunk1, loaded_chunk2, DMDType, deviceNumber, length);
         } else {
             std::cout << "Invalid input. Please press 't', 'l', or 'q'." << std::endl;
         }

@@ -10,6 +10,9 @@
     <ClCompile Include="C:\Users\dalop\OneDrive - stevens.edu\Stevens - PhD Physics\Research\Colaborations\DMD\DMD cpp code\initializeDMD.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\dalop\OneDrive - stevens.edu\Stevens - PhD Physics\Research\Colaborations\DMD\DMD cpp code\splitPattern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\dalop\OneDrive - stevens.edu\Stevens - PhD Physics\Research\Colaborations\DMD\DMD cpp code\loadPattern.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

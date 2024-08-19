@@ -25,7 +25,7 @@ events:
       The output was:
       0
       MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-      Build started 8/16/2024 2:50:28 PM.
+      Build started 8/16/2024 3:30:42 PM.
       
       Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\3.30.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -54,7 +54,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.45
+      Time Elapsed 00:00:01.92
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -80,7 +80,7 @@ events:
       The output was:
       0
       MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-      Build started 8/16/2024 2:50:30 PM.
+      Build started 8/16/2024 3:30:44 PM.
       
       Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\3.30.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -109,7 +109,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.61
+      Time Elapsed 00:00:01.48
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -128,8 +128,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sf1o09"
-      binary: "C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sf1o09"
+      source: "C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sx4tfp"
+      binary: "C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sx4tfp"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -138,40 +138,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sf1o09'
+        Change Dir: 'C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sx4tfp'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_92df6.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5f787.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-        Build started 8/16/2024 2:50:32 PM.
+        Build started 8/16/2024 3:30:47 PM.
         
-        Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf1o09\\cmTC_92df6.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sx4tfp\\cmTC_5f787.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_92df6.dir\\Debug\\".
+          Creating directory "cmTC_5f787.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf1o09\\Debug\\".
-          Creating directory "cmTC_92df6.dir\\Debug\\cmTC_92df6.tlog\\".
+          Creating directory "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sx4tfp\\Debug\\".
+          Creating directory "cmTC_5f787.dir\\Debug\\cmTC_5f787.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_92df6.dir\\Debug\\cmTC_92df6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_92df6.dir\\Debug\\cmTC_92df6.tlog\\unsuccessfulbuild".
+          Creating "cmTC_5f787.dir\\Debug\\cmTC_5f787.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5f787.dir\\Debug\\cmTC_5f787.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_92df6.dir\\Debug\\\\" /Fd"cmTC_92df6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5f787.dir\\Debug\\\\" /Fd"cmTC_5f787.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.40.33813 for x86
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_92df6.dir\\Debug\\\\" /Fd"cmTC_92df6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5f787.dir\\Debug\\\\" /Fd"cmTC_5f787.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf1o09\\Debug\\cmTC_92df6.exe" /INCREMENTAL /ILK:"cmTC_92df6.dir\\Debug\\cmTC_92df6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sf1o09/Debug/cmTC_92df6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sf1o09/Debug/cmTC_92df6.lib" /MACHINE:X86  /machine:X86 cmTC_92df6.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_92df6.vcxproj -> C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf1o09\\Debug\\cmTC_92df6.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sx4tfp\\Debug\\cmTC_5f787.exe" /INCREMENTAL /ILK:"cmTC_5f787.dir\\Debug\\cmTC_5f787.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sx4tfp/Debug/cmTC_5f787.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-sx4tfp/Debug/cmTC_5f787.lib" /MACHINE:X86  /machine:X86 cmTC_5f787.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_5f787.vcxproj -> C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sx4tfp\\Debug\\cmTC_5f787.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_92df6.dir\\Debug\\cmTC_92df6.tlog\\unsuccessfulbuild".
-          Touching "cmTC_92df6.dir\\Debug\\cmTC_92df6.tlog\\cmTC_92df6.lastbuildstate".
-        Done Building Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sf1o09\\cmTC_92df6.vcxproj" (default targets).
+          Deleting file "cmTC_5f787.dir\\Debug\\cmTC_5f787.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5f787.dir\\Debug\\cmTC_5f787.tlog\\cmTC_5f787.lastbuildstate".
+        Done Building Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sx4tfp\\cmTC_5f787.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.44
+        Time Elapsed 00:00:01.56
         
       exitCode: 0
   -
@@ -211,8 +211,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-en4zxl"
-      binary: "C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-en4zxl"
+      source: "C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-k2u84k"
+      binary: "C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-k2u84k"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -222,40 +222,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-en4zxl'
+        Change Dir: 'C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-k2u84k'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0fb51.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_01a16.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.10.4+10fbfbf2e for .NET Framework
-        Build started 8/16/2024 2:50:34 PM.
+        Build started 8/16/2024 3:30:49 PM.
         
-        Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en4zxl\\cmTC_0fb51.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2u84k\\cmTC_01a16.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_0fb51.dir\\Debug\\".
+          Creating directory "cmTC_01a16.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en4zxl\\Debug\\".
-          Creating directory "cmTC_0fb51.dir\\Debug\\cmTC_0fb51.tlog\\".
+          Creating directory "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2u84k\\Debug\\".
+          Creating directory "cmTC_01a16.dir\\Debug\\cmTC_01a16.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_0fb51.dir\\Debug\\cmTC_0fb51.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_0fb51.dir\\Debug\\cmTC_0fb51.tlog\\unsuccessfulbuild".
+          Creating "cmTC_01a16.dir\\Debug\\cmTC_01a16.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_01a16.dir\\Debug\\cmTC_01a16.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0fb51.dir\\Debug\\\\" /Fd"cmTC_0fb51.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_01a16.dir\\Debug\\\\" /Fd"cmTC_01a16.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.40.33813 for x86
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0fb51.dir\\Debug\\\\" /Fd"cmTC_0fb51.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_01a16.dir\\Debug\\\\" /Fd"cmTC_01a16.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en4zxl\\Debug\\cmTC_0fb51.exe" /INCREMENTAL /ILK:"cmTC_0fb51.dir\\Debug\\cmTC_0fb51.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-en4zxl/Debug/cmTC_0fb51.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-en4zxl/Debug/cmTC_0fb51.lib" /MACHINE:X86  /machine:X86 cmTC_0fb51.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_0fb51.vcxproj -> C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en4zxl\\Debug\\cmTC_0fb51.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2u84k\\Debug\\cmTC_01a16.exe" /INCREMENTAL /ILK:"cmTC_01a16.dir\\Debug\\cmTC_01a16.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-k2u84k/Debug/cmTC_01a16.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/CMakeScratch/TryCompile-k2u84k/Debug/cmTC_01a16.lib" /MACHINE:X86  /machine:X86 cmTC_01a16.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_01a16.vcxproj -> C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2u84k\\Debug\\cmTC_01a16.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_0fb51.dir\\Debug\\cmTC_0fb51.tlog\\unsuccessfulbuild".
-          Touching "cmTC_0fb51.dir\\Debug\\cmTC_0fb51.tlog\\cmTC_0fb51.lastbuildstate".
-        Done Building Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-en4zxl\\cmTC_0fb51.vcxproj" (default targets).
+          Deleting file "cmTC_01a16.dir\\Debug\\cmTC_01a16.tlog\\unsuccessfulbuild".
+          Touching "cmTC_01a16.dir\\Debug\\cmTC_01a16.tlog\\cmTC_01a16.lastbuildstate".
+        Done Building Project "C:\\Users\\dalop\\OneDrive - stevens.edu\\Stevens - PhD Physics\\Research\\Colaborations\\DMD\\DMD cpp code\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2u84k\\cmTC_01a16.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.60
+        Time Elapsed 00:00:01.53
         
       exitCode: 0
   -

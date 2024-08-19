@@ -39,6 +39,19 @@ void initializeDMD(unsigned int& length, int16_t& deviceNumber, int16_t& DMDType
     SetWDT(0, deviceNumber);
     SetTPGEnable(0, deviceNumber);
     ClearFifos(deviceNumber);
+
+    SetBlkMd(0, deviceNumber);
+    LoadControl(deviceNumber);
+    ClearFifos(deviceNumber);
+
+    SetRowMd(3, deviceNumber);
+    SetNSFLIP(0, deviceNumber);
+    LoadControl(deviceNumber);
+
+    SetRowMd(1, deviceNumber);
+    SetNSFLIP(0, deviceNumber);
+    LoadControl(deviceNumber);
+
     // Free the DLL after usage
     // FreeLibrary(dllHandle);
 }

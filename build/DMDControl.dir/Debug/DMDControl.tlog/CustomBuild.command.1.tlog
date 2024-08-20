@@ -1,0 +1,10 @@
+^C:\USERS\DALOP\ONEDRIVE - STEVENS.EDU\STEVENS - PHD PHYSICS\RESEARCH\COLABORATIONS\DMD\DMD CPP CODE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code" "-BC:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build" --check-stamp-file "C:/Users/dalop/OneDrive - stevens.edu/Stevens - PhD Physics/Research/Colaborations/DMD/DMD cpp code/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

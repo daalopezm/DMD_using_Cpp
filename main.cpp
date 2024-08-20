@@ -47,6 +47,10 @@ int main() {
 
     std::vector<uint8_t> rowData0(totalRows * rowSize / 8, 0);   // Filled with 0s
     std::vector<uint8_t> rowData1(totalRows * rowSize / 8, 255); // Filled with 255s
+    std::vector<uint8_t> chunk01(totalRows * rowSize / 16, 0);
+    std::vector<uint8_t> chunk02(totalRows * rowSize / 16, 0);
+    std::vector<uint8_t> chunk11(totalRows * rowSize / 16, 0);
+    std::vector<uint8_t> chunk12(totalRows * rowSize / 16, 0);
 
     // Initialize the DMD
     unsigned int length;
